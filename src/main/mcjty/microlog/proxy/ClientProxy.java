@@ -3,6 +3,7 @@ package mcjty.microlog.proxy;
 import com.google.common.util.concurrent.ListenableFuture;
 import mcjty.lib.McJtyLibClient;
 import mcjty.lib.font.TrueTypeFont;
+import mcjty.microlog.blocks.ModBlocks;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.World;
@@ -31,7 +32,7 @@ public class ClientProxy extends CommonProxy {
     @SubscribeEvent
     public void registerModels(ModelRegistryEvent event) {
 //        ModItems.initModels();
-//        ModBlocks.initModels();
+        ModBlocks.initModels();
     }
 
     @Override

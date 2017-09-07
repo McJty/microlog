@@ -5,10 +5,13 @@ import mcjty.lib.McJtyLib;
 import mcjty.lib.base.GeneralConfig;
 import mcjty.lib.network.PacketHandler;
 import mcjty.lib.varia.WrenchChecker;
+import mcjty.microlog.ForgeEventHandlers;
 import mcjty.microlog.MicroLogistics;
+import mcjty.microlog.blocks.ModBlocks;
 import mcjty.microlog.gui.GuiProxy;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.World;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.common.FMLLog;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -27,7 +30,7 @@ public abstract class CommonProxy {
     private Configuration mainConfig;
 
     public void preInit(FMLPreInitializationEvent e) {
-//        MinecraftForge.EVENT_BUS.register(new ForgeEventHandlers());
+        MinecraftForge.EVENT_BUS.register(new ForgeEventHandlers());
         McJtyLib.preInit(e);
 
         GeneralConfig.preInit(e);
@@ -41,7 +44,7 @@ public abstract class CommonProxy {
 //        XNetMessages.registerNetworkMessages(network);
 
 //        ModItems.init();
-//        ModBlocks.init();
+        ModBlocks.init();
     }
 
     private void readMainConfig() {
