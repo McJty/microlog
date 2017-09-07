@@ -1,0 +1,15 @@
+[
+{
+  "modid": "micrologistics",
+  "name": "MicroLogistics",
+  "description": "Micro Logistics",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["McJty"],
+  "credits": "McJty",
+  "logoFile": "",
+  "screenshots": []
+}
+]

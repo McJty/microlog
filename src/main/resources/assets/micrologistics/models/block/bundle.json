@@ -1,0 +1,12 @@
+{
+  "parent": "micrologistics:block/microcube",
+  "textures": {
+    "particle": "#front",
+    "down": "micrologistics:blocks/machine_bottom",
+    "up": "micrologistics:blocks/machine_top",
+    "north": "#front",
+    "east": "micrologistics:blocks/machine_side",
+    "south": "micrologistics:blocks/machine_side",
+    "west": "micrologistics:blocks/machine_side"
+  }
+}

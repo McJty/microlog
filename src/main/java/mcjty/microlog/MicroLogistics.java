@@ -43,7 +43,7 @@ public class MicroLogistics implements ModBase {
     public static boolean rftools = false;
     public static boolean redstoneflux = false;
 
-    public static CreativeTabs tabMicroLog = new CreativeTabs("MicroLogistics") {
+    public static CreativeTabs tabMicroLog = new CreativeTabs("micrologistics") {
         @Override
         public ItemStack getTabIconItem() {
             return new ItemStack(Item.getItemFromBlock(Blocks.ANVIL));
