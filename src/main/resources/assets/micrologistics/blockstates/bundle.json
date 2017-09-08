@@ -5,7 +5,21 @@
     "textures": { "front": "micrologistics:blocks/machine_side" }
   },
   "variants": {
-    "normal": [ {} ],
-    "inventory": [ {} ]
+    "normal": [
+      {}
+    ],
+    "inventory": [
+      {}
+    ],
+    "quadrant": {
+      "nnn": {},
+      "nnp": { "transform": { "translation": [0,0,0.5] } },
+      "npn": { "transform": { "translation": [0,0.5,0] } },
+      "npp": { "transform": { "translation": [0,0.5,0.5] } },
+      "pnn": { "transform": { "translation": [0.5,0,0] } },
+      "pnp": { "transform": { "translation": [0.5,0,0.5] } },
+      "ppn": { "transform": { "translation": [0.5,0.5,0] } },
+      "ppp": { "transform": { "translation": [0.5,0.5,0.5] } }
+    }
   }
 }
